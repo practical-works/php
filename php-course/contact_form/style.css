@@ -1,0 +1,80 @@
+* {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 25px;
+}
+body {
+    background: url("tile.png");
+}
+form {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+    box-shadow: 5px 5px black;
+    background: linear-gradient(silver, gray);
+    border-radius: 30px;
+}
+input, textarea {
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+input:not([type="submit"]), textarea {
+    background: linear-gradient(white, silver);
+}
+input:not([type="submit"]):focus, textarea:focus {
+    box-shadow: 0px 0px black;
+    background: white;
+    text-align: left;
+    cursor: text;
+}
+input[type="submit"] {
+    cursor: pointer;
+    background: linear-gradient(lightskyblue, deepskyblue);
+}
+input[type="submit"]:hover {
+    background: linear-gradient(deepskyblue, lightskyblue);
+}
+input[type="submit"]:active {
+    cursor: pointer;
+    box-shadow: 0 0 black;
+    background: linear-gradient(orangered, orange);
+}
+
+.warning {
+    box-sizing: border-box;
+    background: linear-gradient(red, darkred);
+    border: 1px solid black;
+    color: white;
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 3% 10%;
+    box-shadow: 5px 5px black;
+}
+.min {
+    padding: 0;
+    font-size: 0.8em;
+    padding: 0 3%;
+
+}
+#init-link {
+    border: 1px solid black;
+    background: linear-gradient(green, greenyellow);
+    width: 10%;
+    text-decoration: none;
+    color: darkslategray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    box-shadow: 5px 5px black;
+}
+#init-link:hover {
+    text-shadow: 3px 0px 3px deepskyblue;
+    background: linear-gradient(greenyellow, green);
+    color: white;
+}
